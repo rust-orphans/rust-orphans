@@ -28,10 +28,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             ),
             [advisory] => {
                 assert!(advisory.metadata.informational == Some(Informational::Unmaintained));
-                println!("(nothing for {})", package);
             }
             [..] => {
+                println!("---");
                 println!("{}: {} advisories", package, advisories.len() - 1);
+                dbg!(advisories);
             }
         }
     }
