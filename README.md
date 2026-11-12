@@ -23,11 +23,20 @@ use but are no longer maintained.
   - Unless for some reason required for security fixes
 
 
+## What you need to do
+
+Use the [`patch`][cargo-patch] feature of Cargo to override the
+offending dependency.
+
+
 ## Potential first work
 
-- [bitmaps](https://rustsec.org/advisories/RUSTSEC-2025-0167.html)
+- [`bitmaps`](https://rustsec.org/advisories/RUSTSEC-2025-0167.html)
   - Has an advisory and no obvious fork
   - Lots of dependencies
 - [`im`](https://crates.io/crates/im)
   - [Advisories](https://github.com/rustsec/advisory-db/tree/31cf5a8673e10d3a4d7d829ad5095f47ed419049/crates/im)
   - [Issue](https://github.com/bodil/im-rs/issues/207)
+
+
+[cargo-patch]: https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#the-patch-section
