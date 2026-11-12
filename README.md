@@ -7,13 +7,7 @@ The aim is to create a central place to adopt crates that are still in
 use but are no longer maintained.
 
 
-## TODO
-
-The [bitmaps](https://rustsec.org/advisories/RUSTSEC-2025-0167.html)
-crate looks like a good starting place.
-
-
-# What we do
+## What we do
 
 - Security updates
 - ABI-compatible bug fixes
@@ -23,7 +17,17 @@ crate looks like a good starting place.
 - Provide guidance on using an alternative dependencies
 
 
-# What we do NOT do
+## What we do NOT do
 
 - Updates/breaking ABI changes
   - Unless for some reason required for security fixes
+
+
+## Potential first work
+
+- [bitmaps](https://rustsec.org/advisories/RUSTSEC-2025-0167.html)
+  - Has an advisory and no obvious fork
+  - Lots of dependencies
+- [`im`](https://crates.io/crates/im)
+  - [Advisories](https://github.com/rustsec/advisory-db/tree/31cf5a8673e10d3a4d7d829ad5095f47ed419049/crates/im)
+  - [Issue](https://github.com/bodil/im-rs/issues/207)
