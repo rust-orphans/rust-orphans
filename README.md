@@ -6,6 +6,13 @@ Orphans](https://github.com/rust-orphans) project.
 The aim is to create a central place to adopt crates that are still in
 use but are no longer maintained.
 
+The ideal solution is, of course, to move away from such crates - but
+that can take time. While you're trainsitioning, this project aims to
+provide compatible crates with fixes for RustSec advisories, minor bug
+fixes, etc.
+
+See [EXAMPLE.md](docs/EXAMPLE.md) for an example.
+
 
 ## What we do
 
